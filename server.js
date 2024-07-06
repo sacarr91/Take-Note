@@ -16,6 +16,10 @@ app.get('/', (req, res) =>
     res.sendFile(`${__dirname}/public/pages/index.html`)
 );
 
+app.get('/notes', (req, res) =>
+    res.sendFile(`${__dirname}/public/pages/notes.html`)
+);
+
 app.get('*', (req, res) =>
 res.sendFile(`${__dirname}/public/pages/404.html`))
 
