@@ -1,3 +1,4 @@
+// establishing variables
 let noteForm;
 let noteTitle;
 let noteText;
@@ -5,6 +6,7 @@ let saveNoteBtn;
 let newNoteBtn;
 let noteList;
 
+// pulling variables from html
 if (window.location.pathname === '/notes') {
   noteForm = document.querySelector('.note-form');
   noteTitle = document.querySelector('.note-title');
@@ -28,6 +30,7 @@ const hide = (elem) => {
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
+// get notes from server
 const getNotes = () =>
   fetch('/api/notes', {
     method: 'GET',
@@ -36,6 +39,7 @@ const getNotes = () =>
     }
   });
 
+  // post notes to server
 const saveNote = (note) =>
   fetch('/api/notes', {
     method: 'POST',
@@ -45,6 +49,7 @@ const saveNote = (note) =>
     body: JSON.stringify(note)
   });
 
+// delete notes
 const deleteNote = (id) =>
   fetch(`/api/notes/${id}`, {
     method: 'DELETE',
@@ -53,6 +58,7 @@ const deleteNote = (id) =>
     }
   });
 
+  // 
 const renderActiveNote = () => {
   hide(saveNoteBtn);
   hide(clearBtn);
@@ -72,6 +78,7 @@ const renderActiveNote = () => {
   }
 };
 
+// save note
 const handleNoteSave = () => {
   const newNote = {
     title: noteTitle.value,
