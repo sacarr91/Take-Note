@@ -19,7 +19,7 @@ app.get('/', (req, res) =>
 
 // GET Route for notes page
 app.get('/notes', (req, res) =>
-  res.sendFile(`${__dirname}/public/pages/notes.html`));
+  res.sendFile(`${__dirname}/public/notes.html`));
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
