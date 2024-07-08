@@ -8,13 +8,13 @@ let noteList;
 
 // pulling variables from html
 if (window.location.pathname === '/notes') {
-  noteForm = document.querySelector('.note-form');
-  noteTitle = document.querySelector('.note-title');
-  noteText = document.querySelector('.note-textarea');
-  saveNoteBtn = document.querySelector('.save-note');
-  newNoteBtn = document.querySelector('.new-note');
-  clearBtn = document.querySelector('.clear-btn');
-  noteList = document.querySelectorAll('.list-container .list-group');
+  noteForm = document.querySelector('.note-form'); // line 44
+  noteTitle = document.querySelector('.note-title'); // line 46
+  noteText = document.querySelector('.note-textarea'); // line 51
+  saveNoteBtn = document.querySelector('.save-note'); // line 22
+  newNoteBtn = document.querySelector('.new-note'); // line 26
+  clearBtn = document.querySelector('.clear-btn'); // line 30
+  noteList = document.querySelectorAll('.list-container .list-group'); // line 38, 40
 }
 
 // Show an element
