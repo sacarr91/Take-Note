@@ -1,1 +1,22 @@
-[]
+[
+    {
+        "title": "Complete Express Homework",
+        "text": "Finish coding, test using npm start",
+        "id": "6895c7d9-7e80-4ed0-9091-a41fb81267cb"
+    },
+    {
+        "title": "Submit Module 11 Challenge",
+        "text": "By Monday",
+        "id": "2fbeb9a3-32f6-4b0c-99a4-b34218731c2e"
+    },
+    {
+        "title": "Walk the dog",
+        "text": "His name is Bentley",
+        "id": "e254287f-cedb-42e7-8ef4-fbf8a83a1c51"
+    },
+    {
+        "title": "POST route",
+        "text": "http://localhost:3001/api/notes",
+        "id": "5482e1c5-1d8c-40ee-baf5-66b5dabbeba3"
+    }
+]

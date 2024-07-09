@@ -12,16 +12,22 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
 
-app.use('/api', api);
 
 // GET Route for homepage
 app.get('/', (req, res) =>
-  res.sendFile(`${__dirname}/public/index.html`));
+    res.sendFile(`${__dirname}/public/index.html`));
+
 
 // GET Route for notes page
 app.get('/notes', (req, res) =>
-  res.sendFile(`${__dirname}/public/notes.html`));
+    res.sendFile(`${__dirname}/public/notes.html`));
+
+app.use('/api', api);
+
+// GET Route requested in instructions
+app.get('*', (req, res) =>
+    res.sendFile(`${__dirname}/public/index.html`));
 
 app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT}`)
+    console.log(`App listening at http://localhost:${PORT}`)
 );
