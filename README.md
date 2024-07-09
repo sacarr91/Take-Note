@@ -7,6 +7,9 @@ Record simple notes and thoughts on the Take Note app. Notes recorded will persi
 
 ## Demo
 
+https://github.com/sacarr91/Take-Note/assets/159084766/79be13e5-b265-4a1f-9073-476a6ae7ad19
+
+
 
 
 ## Deployment
